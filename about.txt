@@ -1,0 +1,5 @@
+Theme name:     Public Science
+Description:    Public Science's theme (v1.0)
+Author name:    Public Science
+Author site:    http://publicscience.co
+License:        MIT License

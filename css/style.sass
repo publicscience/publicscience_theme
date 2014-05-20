@@ -1,0 +1,175 @@
+/* ==========================================
+     Config
+     ========================================== */
+$primary-color: #37d1b1
+$title-color: #111
+$secondary-color: #F83232
+$type-color: #222
+$background-color: #fff
+$muted-color: #bbb
+$primary-type: 'Libre Baskerville', Verdana, Geneva, sans-serif
+$title-type: "Karla", "Helvetica Neue" "Helvetica", "Arial", "sans-serif"
+$selection-background: #37d1b1
+
+@import url(http://fonts.googleapis.com/css?family=Karla:400,700)
+@import url(http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic)
+
+@import "core/core"
+
+/* ==========================================
+     Extensions
+     ========================================== */
+@import "exts/icons"
+
+
+/* ==========================================
+     Modules
+     ========================================== */
+
+@import "modules/syntax"
+
+
+/* ==========================================
+     Your Styles
+     ========================================== */
+
+body
+    background: $background-color
+    color: $type-color
+
+.primary-header
+    background: $primary-color
+    a
+        color: #fff
+
+.title
+    text-align: center
+    padding: 2em
+
+.logo
+    font-family: $title-type
+    font-weight: bold
+    text-transform: lowercase
+    img
+        width: 36px
+        margin: 0 1em
+
+section
+    max-width: 660px
+    margin: 2em auto
+    padding: 0 2em
+
+a
+    color: $type-color
+    text-decoration: none
+
+article
+    position: relative
+    margin: 4em 0
+    h1, a
+        color: $title-color
+
+code
+    background: #eee
+pre code
+    background: none
+
+.single
+    h1, .meta
+        text-align: center
+    header
+        padding: 2em 0 4em 0
+
+.posts
+    .meta
+        text-align: right
+        position: absolute
+        width: 14em
+        margin-left: -16em
+        top: 1em
+
+h1
+    text-transform: lowercase
+    font-size: 2em
+    color: #fff
+    margin: 0
+
+h4
+    margin: 2em 0 0 0
+    color: #888
+
+h1, h2, h3, h4
+    font-family: $title-type
+
+.footnotes
+    border-top: 1px solid $muted-color
+    color: #888
+    margin: 3em 0 0 0
+    padding-top: 1.5em
+    font-size: 0.7em
+
+.meta, .note
+    color: $muted-color
+    font-size: 0.6em
+
+.note
+    font-style: italic
+
+.body
+    line-height: 1.6
+    font-size: 0.8em
+    font-family: $primary-type
+    img
+        margin: 3em auto
+        display: block
+    a
+        color: #1d9dbd
+        &:hover
+            background: #eee
+    figcaption
+        margin: -3em 0 3em 0
+        color: $muted-color
+        font-size: 0.8em
+        text-align: center
+        font-style: italic
+
+.divider
+    color: $secondary-color
+    text-align: center
+    margin: 4em 0 0 0
+
+hr
+    margin: 2em 0
+
+.comments
+    margin-top: 6em
+
+.pagination
+    overflow: hidden
+    a
+        color: $muted-color
+        &:hover
+            color: $primary-color
+.prev
+    float: left
+.next
+    float: right
+
+footer
+    padding: 4em 2em
+
+.social-media
+    font-size: 1.4em
+    a
+        color: darken($background-color, 50%)
+        &:hover
+            color: darken($background-color, 80%)
+    li
+        margin: 0 0.3em
+
+blockquote
+    margin: 2em 0
+    color: #888
+    font-size: 0.9em
+    border-left: 4px solid $primary-color
+    padding: 0 0 0 2em
