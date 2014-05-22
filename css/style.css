@@ -877,7 +877,7 @@ h4 {
   margin: 2em 0 0 0;
   color: #888888; }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, .meta {
   font-family: "Karla", "Helvetica Neue" "Helvetica", "Arial", "sans-serif"; }
 
 .footnotes {
@@ -954,3 +954,13 @@ blockquote {
   font-size: 0.9em;
   border-left: 4px solid #37d1b1;
   padding: 0 0 0 2em; }
+
+@media only screen and (max-width: 800px) {
+  .posts .meta {
+    text-align: left;
+    position: static;
+    margin-left: 0;
+    margin: 0em 0 2em 0; }
+    .posts .meta li {
+      display: inline-block;
+      margin-right: 0.5em; } }
