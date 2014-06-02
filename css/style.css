@@ -902,7 +902,7 @@ h1, h2, h3, h4, .meta {
     margin: 3em auto;
     display: block; }
   .body a {
-    color: #1d9dbd; }
+    color: #a726cf; }
     .body a:hover {
       background: #eeeeee; }
   .body figcaption {
@@ -911,6 +911,10 @@ h1, h2, h3, h4, .meta {
     font-size: 0.8em;
     text-align: center;
     font-style: italic; }
+  .body ul {
+    margin-left: 1.2em; }
+  .body li {
+    list-style-type: circle; }
 
 .divider {
   color: #f83232;
@@ -918,7 +922,8 @@ h1, h2, h3, h4, .meta {
   margin: 4em 0 0 0; }
 
 hr {
-  margin: 2em 0; }
+  margin: 2em 0;
+  border-top: 1px dotted #eaeaea; }
 
 .comments {
   margin-top: 6em; }
