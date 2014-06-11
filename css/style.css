@@ -897,7 +897,9 @@ h1, h2, h3, h4, .meta {
 .body {
   line-height: 1.6;
   font-size: 1em;
-  font-family: "Istok Web", Verdana, Geneva, sans-serif; }
+  font-family: "Istok Web", Verdana, Geneva, sans-serif;
+  text-overflow: ellipsis;
+  overflow: hidden; }
   .body img {
     margin: 3em auto;
     display: block; }
