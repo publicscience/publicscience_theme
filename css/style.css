@@ -965,6 +965,21 @@ blockquote {
   border-left: 4px solid #37d1b1;
   padding: 0 0 0 2em; }
 
+.video--embed {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  /* hide video blurb */ }
+
+.video--embed iframe,
+.video--embed object,
+.video--embed embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
 @media only screen and (max-width: 800px) {
   .posts .meta {
     text-align: left;
