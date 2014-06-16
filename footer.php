@@ -2,6 +2,12 @@
             <ul class="social-media list__horizontal__center">
                 <li><a href="https://github.com/<?php echo site_meta('github', 'publicscience'); ?>"><span class="icon-github"></span></a></li>
                 <li><a href="https://twitter.com/<?php echo site_meta('twitter', 'pub_sci'); ?>"><span class="icon-twitter"></span></a></li>
+                <?php
+                    $links = explode('\n', site_meta('links', ''));
+                    foreach ($links as $link) {
+                        echo '<li>'.$link.'</li>';
+                    }
+                ?>
             </ul>
 		</footer>
 

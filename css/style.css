@@ -818,7 +818,8 @@ body {
   color: #242424; }
 
 .primary-header {
-  background: #37d1b1; }
+  background: #37d1b1;
+  margin-bottom: 2em; }
   .primary-header a {
     color: white; }
 
@@ -946,14 +947,16 @@ hr {
 footer {
   padding: 4em 2em; }
 
-.social-media {
+.social-media a {
+  color: gray; }
+  .social-media a:hover {
+    color: #333333; }
+.social-media li {
+  font-size: 0.7em;
+  vertical-align: middle;
+  margin: 0 0.3em; }
+.social-media span {
   font-size: 1.4em; }
-  .social-media a {
-    color: gray; }
-    .social-media a:hover {
-      color: #333333; }
-  .social-media li {
-    margin: 0 0.3em; }
 
 blockquote {
   margin: 2em 0;
