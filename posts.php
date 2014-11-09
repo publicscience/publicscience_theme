@@ -10,6 +10,9 @@
                         <ul class="meta">
                             <li><?php echo article_date(); ?></li>
                             <li><?php echo article_author(); ?></li>
+                            <li>
+                                <a href="<?php echo article_category_url(); ?>"><?php echo article_category(); ?></a>
+                            </li>
                         </ul>
                     </header>
                     <div class="body">
@@ -19,7 +22,7 @@
 				</article>
 			<?php endwhile; endif; ?>
 		</section>
-		
+
 		<section class="pagination">
 			<?php if(has_pagination()) : ?>
 			    <nav class="pagination">

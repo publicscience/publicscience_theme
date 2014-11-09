@@ -5,8 +5,9 @@
                 <header>
                     <h1><?php echo article_title(); ?></h1>
                     <div class="meta">
-                        <?php echo article_author(); ?> | 
-                        <?php echo article_date(); ?>
+                        <?php echo article_author(); ?> |
+                        <?php echo article_date(); ?> |
+                        <a href="<?php echo article_category_url(); ?>"><?php echo article_category(); ?></a>
                     </div>
                 </header>
                 <div class="body">
@@ -14,7 +15,7 @@
                 </div>
 			</article>
 		</section>
-	
+
 		<section class="comments">
             <div id="disqus_thread"></div>
             <script type="text/javascript">
