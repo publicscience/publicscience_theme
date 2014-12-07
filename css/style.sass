@@ -6,12 +6,13 @@ $title-color: #111
 $secondary-color: #F83232
 $type-color: #242424
 $background-color: #fff
-$muted-color: #bbb
-$primary-type: "Karla", "Helvetica Neue" "Helvetica", "Arial", "sans-serif"
-$title-type: "Karla", "Helvetica Neue" "Helvetica", "Arial", "sans-serif"
+$muted-color: #8A8787
+$primary-type: "Karla", "Helvetica Neue", "Helvetica", "Arial", "sans-serif"
+$title-type: "Karla", "Helvetica Neue", "Helvetica", "Arial", "sans-serif"
 $selection-background: #37d1b1
 
 @import url(http://fonts.googleapis.com/css?family=Karla:400,700)
+@import url(http://fonts.googleapis.com/css?family=Inconsolata)
 
 @import "core/core"
 
@@ -69,8 +70,11 @@ article
     h1, a
         color: $title-color
 
+pre
+    font-size: 0.75em
 code
     background: #eee
+    font-family: 'Inconsolata', 'monospace'
 pre code
     background: none
 

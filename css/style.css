@@ -2,6 +2,7 @@
  * Config
  * ========================================== */
 @import url(http://fonts.googleapis.com/css?family=Karla:400,700);
+@import url(http://fonts.googleapis.com/css?family=Inconsolata);
 /*! normalize.css v2.1.2 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
@@ -825,7 +826,7 @@ body {
   padding: 2em; }
 
 .logo {
-  font-family: "Karla", "Helvetica Neue" "Helvetica", "Arial", "sans-serif";
+  font-family: "Karla", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
   font-weight: bold;
   text-transform: lowercase; }
   .logo img {
@@ -847,8 +848,12 @@ article {
   article h1, article a {
     color: #111111; }
 
+pre {
+  font-size: 0.75em; }
+
 code {
-  background: #eeeeee; }
+  background: #eeeeee;
+  font-family: "Inconsolata", "monospace"; }
 
 pre code {
   background: none; }
@@ -876,17 +881,17 @@ h4 {
   color: #888888; }
 
 h1, h2, h3, h4, .meta {
-  font-family: "Karla", "Helvetica Neue" "Helvetica", "Arial", "sans-serif"; }
+  font-family: "Karla", "Helvetica Neue", "Helvetica", "Arial", "sans-serif"; }
 
 .footnotes {
-  border-top: 1px solid #bbbbbb;
+  border-top: 1px solid #8a8787;
   color: #888888;
   margin: 3em 0 0 0;
   padding-top: 1.5em;
   font-size: 0.7em; }
 
 .meta, .note {
-  color: #bbbbbb;
+  color: #8a8787;
   font-size: 0.6em; }
 
 .note {
@@ -895,7 +900,7 @@ h1, h2, h3, h4, .meta {
 .body {
   line-height: 1.6;
   font-size: 1em;
-  font-family: "Karla", "Helvetica Neue" "Helvetica", "Arial", "sans-serif";
+  font-family: "Karla", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
   text-overflow: ellipsis;
   overflow: hidden; }
   .body img {
@@ -907,7 +912,7 @@ h1, h2, h3, h4, .meta {
       background: #eeeeee; }
   .body figcaption {
     margin: -3em 0 3em 0;
-    color: #bbbbbb;
+    color: #8a8787;
     font-size: 0.8em;
     text-align: center;
     font-style: italic; }
@@ -931,7 +936,7 @@ hr {
 .pagination {
   overflow: hidden; }
   .pagination a {
-    color: #bbbbbb; }
+    color: #8a8787; }
     .pagination a:hover {
       color: #37d1b1; }
 
