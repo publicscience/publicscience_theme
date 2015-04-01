@@ -2,6 +2,10 @@
 
 		<section class="content posts">
 			<?php if(has_posts()) : while(posts()) : ?>
+                <?php
+                    if (article_category() === "drafts")
+                        continue;
+                ?>
 				<article>
                     <header>
                         <h1>
