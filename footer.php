@@ -12,10 +12,19 @@
 		</footer>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <script src="<?php echo theme_url('js/highlight.pack.js'); ?>"></script>
     <script>
         $(document).ready(function() {
             $('pre').each(function(i, e) {hljs.highlightBlock(e)});
+            MathJax.Hub.Config({
+                tex2jax: {
+                    inlineMath: [["$","$"]],
+                    displayMath: [['$$','$$']],
+                    processEscapes: true
+                }
+            });
+            MathJax.Hub.Startup.onload();
         });
     </script>
 	</body>
